@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hh1-6H-tdN">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iTunes Search iOS22-->
+        <scene sceneID="1Ci-Y8-205">
+            <objects>
+                <tableViewController id="kwQ-pY-ZlG" customClass="MainTableViewController" customModule="iTunesSearchAPI_iOS22" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1IX-Kp-qif">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="KBD-gF-Ndo">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pom-pl-nNQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.46069687120000002" green="0.78063875439999997" blue="0.76394408430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.46069687120000002" green="0.78063875439999997" blue="0.76394408430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="barTintColor" red="0.46069687120000002" green="0.78063875439999997" blue="0.76394408430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="69C-0D-Hm6">
+                                    <rect key="frame" x="-2" y="56" width="416" height="29"/>
+                                    <segments>
+                                        <segment title="Muisc"/>
+                                        <segment title="Apps"/>
+                                    </segments>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" red="0.46069687120000002" green="0.78063875439999997" blue="0.76394408430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="69C-0D-Hm6" firstAttribute="leading" secondItem="KBD-gF-Ndo" secondAttribute="leading" constant="-2" id="ClC-6o-Vig"/>
+                                <constraint firstAttribute="trailing" secondItem="69C-0D-Hm6" secondAttribute="trailing" id="aA4-oO-CrQ"/>
+                                <constraint firstAttribute="bottom" secondItem="69C-0D-Hm6" secondAttribute="bottom" constant="3" id="zcu-Mm-uo1"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itunesItemCell" rowHeight="122" id="xN6-Ej-6vo" customClass="ItunesItemTableViewCell" customModule="iTunesSearchAPI_iOS22" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="115" width="414" height="122"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xN6-Ej-6vo" id="eh9-el-KxT" customClass="ItunesItemTableViewCell" customModule="iTunesSearchAPI_iOS22" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="121.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="center" spacing="205" translatesAutoresizingMaskIntoConstraints="NO" id="raG-04-VDG">
+                                            <rect key="frame" x="20.5" y="11" width="373.5" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="kfu-Uc-k0u">
+                                                    <rect key="frame" x="0.0" y="18" width="69" height="64"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="(title)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VON-eA-KeW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="41" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(subtitle)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mo0-vc-a12">
+                                                            <rect key="frame" x="0.0" y="43.5" width="69" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-l7-XTR">
+                                                    <rect key="frame" x="274" y="0.0" width="99.5" height="99.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="w6E-l7-XTR" secondAttribute="height" multiplier="1:1" id="fnU-ec-341"/>
+                                                        <constraint firstAttribute="height" constant="99.5" id="otz-8j-aFO"/>
+                                                        <constraint firstAttribute="width" constant="99.5" id="xAI-kY-4rL"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="w6E-l7-XTR" firstAttribute="leading" secondItem="kfu-Uc-k0u" secondAttribute="trailing" constant="100" id="nzr-uH-LOY"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="w6E-l7-XTR" secondAttribute="trailing" constant="20" id="7fI-yj-fm2"/>
+                                        <constraint firstItem="w6E-l7-XTR" firstAttribute="leading" secondItem="eh9-el-KxT" secondAttribute="leading" constant="294.5" id="TJY-wq-z1A"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itunesImageView" destination="w6E-l7-XTR" id="xft-dm-hpB"/>
+                                    <outlet property="subTitleLabel" destination="Mo0-vc-a12" id="WnJ-7x-70J"/>
+                                    <outlet property="titleLabel" destination="VON-eA-KeW" id="hja-f7-NSs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kwQ-pY-ZlG" id="Ysc-Y8-PoN"/>
+                            <outlet property="delegate" destination="kwQ-pY-ZlG" id="z3g-as-4rP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="iTunes Search iOS22" id="qwb-Kp-XaS"/>
+                    <connections>
+                        <outlet property="searchBarOutLet" destination="Pom-pl-nNQ" id="HVd-Wl-xVK"/>
+                        <outlet property="segmentedButtons" destination="69C-0D-Hm6" id="zeU-ac-OWv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoH-IW-NDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.289855072463769" y="115.17857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HU5-Ko-9cj">
+            <objects>
+                <navigationController id="Hh1-6H-tdN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rpq-Yb-02u">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kwQ-pY-ZlG" kind="relationship" relationship="rootViewController" id="mSE-KN-UWt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i27-xf-rgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-876" y="108"/>
+        </scene>
+    </scenes>
+</document>

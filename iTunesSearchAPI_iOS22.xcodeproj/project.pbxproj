@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		473DB6642178E7CC00402E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473DB6632178E7CC00402E74 /* AppDelegate.swift */; };
-		473DB6662178E7CC00402E74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473DB6652178E7CC00402E74 /* ViewController.swift */; };
-		473DB6692178E7CC00402E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473DB6672178E7CC00402E74 /* Main.storyboard */; };
 		473DB66B2178E7CD00402E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473DB66A2178E7CD00402E74 /* Assets.xcassets */; };
-		473DB66E2178E7CD00402E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473DB66C2178E7CD00402E74 /* LaunchScreen.storyboard */; };
+		473DB67C2178E8DE00402E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473DB67B2178E8DE00402E74 /* Main.storyboard */; };
+		473DB67E2178EBF000402E74 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473DB67D2178EBF000402E74 /* MainTableViewController.swift */; };
+		473DB6802178EC0E00402E74 /* AppstoreItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473DB67F2178EC0E00402E74 /* AppstoreItemModel.swift */; };
+		473DB6822178EC1B00402E74 /* AppStoreItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473DB6812178EC1B00402E74 /* AppStoreItemController.swift */; };
+		473DB6842178ED4500402E74 /* ItunesItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473DB6832178ED4500402E74 /* ItunesItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		473DB6602178E7CC00402E74 /* iTunesSearchAPI_iOS22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearchAPI_iOS22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		473DB6632178E7CC00402E74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		473DB6652178E7CC00402E74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		473DB6682178E7CC00402E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		473DB66A2178E7CD00402E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		473DB66D2178E7CD00402E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		473DB66F2178E7CD00402E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473DB67B2178E8DE00402E74 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		473DB67D2178EBF000402E74 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		473DB67F2178EC0E00402E74 /* AppstoreItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppstoreItemModel.swift; sourceTree = "<group>"; };
+		473DB6812178EC1B00402E74 /* AppStoreItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreItemController.swift; sourceTree = "<group>"; };
+		473DB6832178ED4500402E74 /* ItunesItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,64 @@
 		473DB6622178E7CC00402E74 /* iTunesSearchAPI_iOS22 */ = {
 			isa = PBXGroup;
 			children = (
-				473DB6632178E7CC00402E74 /* AppDelegate.swift */,
-				473DB6652178E7CC00402E74 /* ViewController.swift */,
-				473DB6672178E7CC00402E74 /* Main.storyboard */,
-				473DB66A2178E7CD00402E74 /* Assets.xcassets */,
-				473DB66C2178E7CD00402E74 /* LaunchScreen.storyboard */,
-				473DB66F2178E7CD00402E74 /* Info.plist */,
+				473DB67A2178E7DE00402E74 /* View */,
+				473DB6792178E7DC00402E74 /* UI */,
+				473DB6772178E7D900402E74 /* ModelController */,
+				473DB6782178E7DB00402E74 /* ViewController */,
+				473DB6762178E7D700402E74 /* Model */,
+				473DB6752178E7D300402E74 /* resources */,
 			);
 			path = iTunesSearchAPI_iOS22;
+			sourceTree = "<group>";
+		};
+		473DB6752178E7D300402E74 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				473DB6632178E7CC00402E74 /* AppDelegate.swift */,
+				473DB66A2178E7CD00402E74 /* Assets.xcassets */,
+				473DB66F2178E7CD00402E74 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		473DB6762178E7D700402E74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				473DB67F2178EC0E00402E74 /* AppstoreItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		473DB6772178E7D900402E74 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				473DB67D2178EBF000402E74 /* MainTableViewController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		473DB6782178E7DB00402E74 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				473DB6812178EC1B00402E74 /* AppStoreItemController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		473DB6792178E7DC00402E74 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				473DB67B2178E8DE00402E74 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		473DB67A2178E7DE00402E74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				473DB6832178ED4500402E74 /* ItunesItemTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				473DB66E2178E7CD00402E74 /* LaunchScreen.storyboard in Resources */,
 				473DB66B2178E7CD00402E74 /* Assets.xcassets in Resources */,
-				473DB6692178E7CC00402E74 /* Main.storyboard in Resources */,
+				473DB67C2178E8DE00402E74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				473DB6662178E7CC00402E74 /* ViewController.swift in Sources */,
+				473DB6822178EC1B00402E74 /* AppStoreItemController.swift in Sources */,
+				473DB6842178ED4500402E74 /* ItunesItemTableViewCell.swift in Sources */,
+				473DB67E2178EBF000402E74 /* MainTableViewController.swift in Sources */,
+				473DB6802178EC0E00402E74 /* AppstoreItemModel.swift in Sources */,
 				473DB6642178E7CC00402E74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		473DB6672178E7CC00402E74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				473DB6682178E7CC00402E74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		473DB66C2178E7CD00402E74 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				473DB66D2178E7CD00402E74 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		473DB6702178E7CD00402E74 /* Debug */ = {
@@ -284,7 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = iTunesSearchAPI_iOS22/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iTunesSearchAPI_iOS22/resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = iTunesSearchAPI_iOS22/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iTunesSearchAPI_iOS22/resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
